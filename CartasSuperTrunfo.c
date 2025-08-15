@@ -50,6 +50,7 @@ int main() {
 
     // Carta 2:
     printf("\n\n\nCadastro da carta 2:\n\n");
+    getchar();
     printf("Digite o código do Estado 2 (uma letra de A a H): ");
     scanf("%c", &estado2);
     getchar();
@@ -99,7 +100,7 @@ int main() {
     printf("População: %d habitantes\n", populacao2);
     printf("Área: %.2f km²\n", area2);
     printf("PIB: R$ %.2f bilhões\n", pib2);
-    printf("Número de pontos turísticos: %d\n", pontosT2);
+    printf("Número de pontos turísticos: %d\n\n\n", pontosT2);
 
     return 0;
 }
