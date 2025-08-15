@@ -24,9 +24,11 @@ int main() {
     printf("Cadastro da carta 1:\n\n");
     printf("Digite o código do Estado 1 (uma letra de A a H): ");
     scanf("%c", &estado1);
+    getchar();
 
     printf("Digite o código da carta 1 (3 dígitos, incluindo a letra do Estado: ex: A01, B02): ");
-    scanf("%s", &codigo1);
+    scanf("%s", codigo1);
+    getchar();
 
     printf("Digite o nome da cidade 1: ");
     // De acordo com a dica de aula, a função fgets é mais indicada para armazenar nomes, pois aceita a inclusão de espaços
@@ -38,7 +40,7 @@ int main() {
     scanf("%d", &populacao1);
 
     printf("Digite a área da cidade 1 (em km²): ");
-    scanf("%d", &area1);
+    scanf("%f", &area1);
 
     printf("Digite o PIB da cidade 1 (em bilhões): ");
     scanf("%f", &pib1);
@@ -50,9 +52,11 @@ int main() {
     printf("\n\n\nCadastro da carta 2:\n\n");
     printf("Digite o código do Estado 2 (uma letra de A a H): ");
     scanf("%c", &estado2);
+    getchar();
 
     printf("Digite o código da carta 2 (3 dígitos, incluindo a letra do Estado: ex: A01, B02): ");
-    scanf("%s", &codigo2);
+    scanf("%s", codigo2);
+    getchar();
 
     printf("Digite o nome da cidade 2: ");
     // De acordo com a dica de aula, a função fgets é mais indicada para armazenar nomes, pois aceita a inclusão de espaços
@@ -64,7 +68,7 @@ int main() {
     scanf("%d", &populacao2);
 
     printf("Digite a área da cidade 2 (em km²): ");
-    scanf("%d", &area2);
+    scanf("%f", &area2);
 
     printf("Digite o PIB da cidade 2 (em bilhões): ");
     scanf("%f", &pib2);
@@ -86,7 +90,7 @@ int main() {
     printf("População: %d habitantes\n", populacao1);
     printf("Área: %.2f km²\n", area1);
     printf("PIB: R$ %.2f bilhões\n", pib1);
-    printf("Número de pontos turísticos: %c\n", pontosT1);
+    printf("Número de pontos turísticos: %d\n", pontosT1);
 
     printf("\n\nDados da Carta 2\n\n");
     printf("Estado: %c\n", estado2);
@@ -95,7 +99,7 @@ int main() {
     printf("População: %d habitantes\n", populacao2);
     printf("Área: %.2f km²\n", area2);
     printf("PIB: R$ %.2f bilhões\n", pib2);
-    printf("Número de pontos turísticos: %c\n", pontosT2);
+    printf("Número de pontos turísticos: %d\n", pontosT2);
 
     return 0;
 }
